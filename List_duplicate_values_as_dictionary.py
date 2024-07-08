@@ -1,5 +1,6 @@
 L=['a','b','b','a','b','c']
 L1=list(set(L))
+# L1.sort()
 print(L1)
 D={}
 #count=1
@@ -9,8 +10,16 @@ D={}
 #       count+=1
 #       D[i]=count
 
+def counting(my_list,char):
+    char_count=0
+    for i in my_list:
+        if i == char:
+            char_count +=1
+    return char_count
+
 for i in L1:
-    k=L.count(i)
+    k=counting(L,i)
+    # k=L.count(i)
     D[i]=k
 print(D,type(D))
 

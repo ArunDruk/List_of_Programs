@@ -1,6 +1,7 @@
 # This program returns the first non repeating character in the string, suppose if there are no non-repeating character then this
 # program returns a underscore '_'
 
+
 def first_non_repeating_character(s):
     L=[]
     print(__name__)
